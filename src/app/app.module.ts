@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicComponent } from './basic/basic.component';
 import { Select2Module } from 'ng2-select2';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
    declarations: [
@@ -14,7 +15,8 @@ import { Select2Module } from 'ng2-select2';
    imports: [
       BrowserModule,
       AppRoutingModule,
-      Select2Module
+      Select2Module,
+      HttpClientModule,
    ],
    providers: [],
    bootstrap: [
